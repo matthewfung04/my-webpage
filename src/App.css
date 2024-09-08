@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #00274D;
   color: white;
-  background-image: url('C:\\Users\\User\\Documents\\Summer Project 2023\\Webpage\\my-webpage\\public\\cube_pattern.png');
+  background-image: url('./assets/cube_pattern.png');
   background-repeat: repeat; 
 }
 
