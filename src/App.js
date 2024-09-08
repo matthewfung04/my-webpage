@@ -149,12 +149,18 @@ function App() {
     setOpenCourse(openCourse === index ? null : index);
   };
 
+  function toggleNav() {
+    const navLinks = document.querySelector('.App-nav-links');
+    navLinks.classList.toggle('show');
+  }
+
   return (
     <div className="App">
     
       {/* Nav Bar */}
       <nav className='App-nav'>
         <img src="/logo.png" alt="Logo" className="App-logo" />
+        <button className="nav-toggle" onClick={toggleNav}>☰</button>
         <div className="App-nav-links">
           <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>Home</a>
           <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About Me</a>
